@@ -16,6 +16,7 @@
 ### Because we can't change the webroot folder to a subfolder of the document root, we need this rewrite rules ###
 
 RewriteEngine on
+RewriteBase /
 
 # serve existing files in the /public folder as if they were in /
 RewriteCond %{REQUEST_URI} !public/
